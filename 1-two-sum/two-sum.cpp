@@ -10,15 +10,13 @@ public:
             number= target-nums[i];
 
             if(mpp.find(number)!= mpp.end()){
-                ans.push_back(i);
-                ans.push_back(mpp[number]);
+                return{i, mpp[number]};
             }
-            else{
-                mpp[nums[i]]=i;
-            }
+            
+            mpp[nums[i]]=i;
 
         }
-        return ans;
+        return {};
         
     }
 };
