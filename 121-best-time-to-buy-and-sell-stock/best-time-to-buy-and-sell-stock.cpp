@@ -5,7 +5,7 @@ public:
         int r=0;
         int maxp=0;
         while(r<prices.size()){
-            if(prices[r]<= prices[l]){
+            if(prices[r]< prices[l]){
                 l=r;
                 r++;
             }
