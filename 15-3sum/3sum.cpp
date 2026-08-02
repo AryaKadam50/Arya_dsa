@@ -4,12 +4,10 @@ public:
         sort(nums.begin(), nums.end());
         vector<vector<int>> ans;
         int j,k;
-        int last =INT_MIN;
         for(int i=0; i<nums.size(); i++){
-            if(nums[i]==last){
+            if(i!=0 && nums[i]==nums[i-1]){
                 continue;
             }
-            last = nums[i];
             j= i+1;
             k= nums.size()-1;
             while(j<k){
