@@ -23,6 +23,7 @@ public:
         while(!q.empty()){
             int q_size= q.size();
             vector<int>level;
+            level.reserve(q_size);
 
             for(int i=0; i<q_size; i++){
                 TreeNode* node = q.front();
