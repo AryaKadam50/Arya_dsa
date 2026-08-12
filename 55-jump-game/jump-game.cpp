@@ -8,6 +8,9 @@ public:
                 return false;
             }
             maxIndex= max(maxIndex, i+nums[i]);
+            if(maxIndex>= nums.size()){
+                return true;
+            }
         }
         return true;
     }
